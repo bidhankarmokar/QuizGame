@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="startFace">
+        <h2>Do you want to play a awesome quiz game?</h2>
+        <p>
+          This game is design for learning html , css and javascript. It will
+          help me. I will learn html, css and javascript core concept by
+          building this game. It will be very easy game. You will get result at
+          the end of game.
+        </p>
+        <button onclick="startGame()">Start Quiz</button>
+      </div>
+      <div class="questionFace">
+        <h3>
+          <span class="questionIndex"></span><span class="question"></span>
+        </h3>
+        <div class="group">
+          <small
+            >Question: <span class="questionIndex">1</span> of
+            <span class="totalQuestion">5</span></small
+          >
+          <small
+            >Score: <span class="score">0</span> of
+            <span class="totalScore">10</span></small
+          >
+        </div>
+        <ul class="questionOptions"></ul>
+        <div class="progressBar">
+          <div class="fill"></div>
+        </div>
+      </div>
+      <div class="resultFace">
+        <div class="resultBody">
+          <h3>Awesome!</h3>
+          <p>
+            You got <span class="score">0</span> out of
+            <span class="totalScore">10</span>
+          </p>
+        </div>
+        <div class="btnGroup">
+          <button type="button" onclick="quitGame()">Quit Game</button>
+          <button type="button" onclick="startGame()">Restart Game</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
